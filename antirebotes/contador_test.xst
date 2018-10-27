@@ -1,0 +1,5 @@
+set -tmpdir "/home/edilson/projects_VHDL/antirebotes/xst/projnav.tmp"
+set -xsthdpdir "/home/edilson/projects_VHDL/antirebotes/xst"
+elaborate
+-ifn contador_test.prj
+-ifmt mixed

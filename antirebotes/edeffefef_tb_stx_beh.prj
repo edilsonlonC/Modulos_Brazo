@@ -1,0 +1,4 @@
+vhdl isim_temp "Module_AR.vhd"
+vhdl isim_temp "contador_test.vhd"
+vhdl isim_temp "AR_complete_counter.vhd"
+vhdl isim_temp "edeffefef_tb.vhd"

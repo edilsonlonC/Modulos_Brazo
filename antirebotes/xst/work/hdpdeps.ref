@@ -1,0 +1,21 @@
+V3 11
+FL /home/edilson/projects_VHDL/antirebotes/AR_complete_counter.vhd 2018/09/08.20:01:44 P.20131013
+EN work/AR_complete_counter 1536455673 \
+      FL /home/edilson/projects_VHDL/antirebotes/AR_complete_counter.vhd \
+      PB ieee/std_logic_1164 1381692176
+AR work/AR_complete_counter/Behavioral 1536455674 \
+      FL /home/edilson/projects_VHDL/antirebotes/AR_complete_counter.vhd \
+      EN work/AR_complete_counter 1536455673 CP Module_AR CP contador_test
+FL /home/edilson/projects_VHDL/antirebotes/contador_test.vhd 2018/09/08.19:54:54 P.20131013
+EN work/contador_test 1536455671 \
+      FL /home/edilson/projects_VHDL/antirebotes/contador_test.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/STD_LOGIC_UNSIGNED 1381692179
+AR work/contador_test/Behavioral 1536455672 \
+      FL /home/edilson/projects_VHDL/antirebotes/contador_test.vhd \
+      EN work/contador_test 1536455671
+FL /home/edilson/projects_VHDL/antirebotes/Module_AR.vhd 2018/09/08.20:14:14 P.20131013
+EN work/Module_AR 1536455669 \
+      FL /home/edilson/projects_VHDL/antirebotes/Module_AR.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/STD_LOGIC_UNSIGNED 1381692179
+AR work/Module_AR/Behavioral 1536455670 \
+      FL /home/edilson/projects_VHDL/antirebotes/Module_AR.vhd EN work/Module_AR 1536455669

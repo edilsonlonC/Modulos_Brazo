@@ -1,0 +1,29 @@
+Command line:
+   servo_pwm_contador_clk64kHz_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  54221
+
+Wed Aug 22 09:15:18 2018
+
+
+ Elaboration Time: 0.02 sec
+
+ Current Memory Usage: 196.092 Meg
+
+ Total Signals          : 24
+ Total Nets             : 41
+ Total Signal Drivers   : 8
+ Total Blocks           : 6
+ Total Primitive Blocks : 5
+ Total Processes        : 7
+ Total Traceable Variables  : 13
+ Total Scalar Nets and Variables : 524
+Total Line Count : 21
+
+ Total Simulation Time: 0.02 sec
+
+ Current Memory Usage: 271.593 Meg
+
+Wed Aug 22 09:15:24 2018
+

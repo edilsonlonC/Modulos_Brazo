@@ -1,0 +1,1 @@
+xst -intstyle ise -ifn "/home/edilson/projects_VHDL/Memory_Rom/rams_21b.xst" -ofn "/home/edilson/projects_VHDL/Memory_Rom/rams_21b.syr" 

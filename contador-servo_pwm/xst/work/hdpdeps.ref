@@ -1,0 +1,30 @@
+V3 15
+FL /home/edilson/projects_VHDL/contador-servo_pwm/clk64kHz.vhd 2018/08/18.09:38:12 P.20131013
+EN work/clk64kHz 1534948217 \
+      FL /home/edilson/projects_VHDL/contador-servo_pwm/clk64kHz.vhd \
+      PB ieee/std_logic_1164 1381692176
+AR work/clk64kHz/Behavioral 1534948218 \
+      FL /home/edilson/projects_VHDL/contador-servo_pwm/clk64kHz.vhd \
+      EN work/clk64kHz 1534948217
+FL /home/edilson/projects_VHDL/contador-servo_pwm/contador_servo_pwn.vhd 2018/08/18.13:17:04 P.20131013
+EN work/contador_servo_pwm 1534948219 \
+      FL /home/edilson/projects_VHDL/contador-servo_pwm/contador_servo_pwn.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181
+AR work/contador_servo_pwm/Behavioral 1534948220 \
+      FL /home/edilson/projects_VHDL/contador-servo_pwm/contador_servo_pwn.vhd \
+      EN work/contador_servo_pwm 1534948219
+FL /home/edilson/projects_VHDL/contador-servo_pwm/servo_pwm.vhd 2018/08/18.09:32:59 P.20131013
+EN work/servo_pwm 1534948221 \
+      FL /home/edilson/projects_VHDL/contador-servo_pwm/servo_pwm.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181
+AR work/servo_pwm/Behavioral 1534948222 \
+      FL /home/edilson/projects_VHDL/contador-servo_pwm/servo_pwm.vhd \
+      EN work/servo_pwm 1534948221
+FL /home/edilson/projects_VHDL/contador-servo_pwm/servo_pwm_clk64kHz.vhd 2018/08/18.13:20:07 P.20131013
+EN work/servo_pwm_contador_clk64kHz 1534948223 \
+      FL /home/edilson/projects_VHDL/contador-servo_pwm/servo_pwm_clk64kHz.vhd \
+      PB ieee/std_logic_1164 1381692176
+AR work/servo_pwm_contador_clk64kHz/Behavioral 1534948224 \
+      FL /home/edilson/projects_VHDL/contador-servo_pwm/servo_pwm_clk64kHz.vhd \
+      EN work/servo_pwm_contador_clk64kHz 1534948223 CP clk64kHz \
+      CP contador_servo_pwm CP servo_pwm

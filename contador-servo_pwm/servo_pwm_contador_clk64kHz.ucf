@@ -1,0 +1,8 @@
+
+# PlanAhead Generated physical constraints 
+
+NET "clk" LOC = B8;
+NET "cnt_dn" LOC = H18;
+NET "cnt_up" LOC = K18;
+NET "reset" LOC = G18;
+NET "servo" LOC = K12;

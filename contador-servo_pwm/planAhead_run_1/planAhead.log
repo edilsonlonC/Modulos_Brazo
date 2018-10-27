@@ -1,0 +1,90 @@
+#-----------------------------------------------------------
+# PlanAhead v14.7 (64-bit)
+# Build 321239 by xbuild on Fri Sep 27 19:24:36 MDT 2013
+# Start of session at: Wed Aug 22 09:31:43 2018
+# Process ID: 3381
+# Log file: /home/edilson/projects_VHDL/contador-servo_pwm/planAhead_run_1/planAhead.log
+# Journal file: /home/edilson/projects_VHDL/contador-servo_pwm/planAhead_run_1/planAhead.jou
+#-----------------------------------------------------------
+INFO: [Common 17-78] Attempting to get a license: PlanAhead
+INFO: [Common 17-290] Got license for PlanAhead
+INFO: [Device 21-36] Loading parts and site information from /opt/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/arch.xml
+Parsing RTL primitives file [/opt/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/xilinx/rtl/prims/rtl_prims.xml]
+Finished parsing RTL primitives file [/opt/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/xilinx/rtl/prims/rtl_prims.xml]
+start_gui
+source /home/edilson/projects_VHDL/contador-servo_pwm/pa.fromNetlist.tcl
+# create_project -name contador-servo_pwm -dir "/home/edilson/projects_VHDL/contador-servo_pwm/planAhead_run_1" -part xc3s500efg320-4
+# set_property design_mode GateLvl [get_property srcset [current_run -impl]]
+# set_property edif_top_file "/home/edilson/projects_VHDL/contador-servo_pwm/servo_pwm_contador_clk64kHz.ngc" [ get_property srcset [ current_run ] ]
+# add_files -norecurse { {/home/edilson/projects_VHDL/contador-servo_pwm} }
+# set_param project.pinAheadLayout  yes
+# set_property target_constrs_file "servo_pwm_contador_clk64kHz.ucf" [current_fileset -constrset]
+Adding file '/home/edilson/projects_VHDL/contador-servo_pwm/servo_pwm_contador_clk64kHz.ucf' to fileset 'constrs_1'
+# add_files [list {servo_pwm_contador_clk64kHz.ucf}] -fileset [get_property constrset [current_run]]
+# link_design
+Design is defaulting to srcset: sources_1
+Design is defaulting to constrset: constrs_1
+Design is defaulting to project part: xc3s500efg320-4
+WARNING: es_CO is not supported as a language.  Using usenglish.
+Release 14.7 - ngc2edif P.20131013 (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+Release 14.7 - ngc2edif P.20131013 (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+Reading design servo_pwm_contador_clk64kHz.ngc ...
+WARNING:NetListWriters:298 - No output is written to
+   servo_pwm_contador_clk64kHz.xncf, ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+  finished :Prep
+Writing EDIF netlist file servo_pwm_contador_clk64kHz.edif ...
+ngc2edif: Total memory usage is 103920 kilobytes
+
+Parsing EDIF File [./planAhead_run_1/contador-servo_pwm.data/cache/servo_pwm_contador_clk64kHz_ngc_a7d41c3e.edif]
+Finished Parsing EDIF File [./planAhead_run_1/contador-servo_pwm.data/cache/servo_pwm_contador_clk64kHz_ngc_a7d41c3e.edif]
+INFO: [Designutils 20-910] Reading macro library /opt/Xilinx/14.7/ISE_DS/PlanAhead/data/./parts/xilinx/spartan3e/spartan3e/hd_int_macros.edn
+Parsing EDIF File [/opt/Xilinx/14.7/ISE_DS/PlanAhead/data/./parts/xilinx/spartan3e/spartan3e/hd_int_macros.edn]
+Finished Parsing EDIF File [/opt/Xilinx/14.7/ISE_DS/PlanAhead/data/./parts/xilinx/spartan3e/spartan3e/hd_int_macros.edn]
+Loading clock regions from /opt/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/xilinx/spartan3e/spartan3e/xc3s500e/ClockRegion.xml
+Loading clock buffers from /opt/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/xilinx/spartan3e/spartan3e/xc3s500e/ClockBuffers.xml
+Loading package from /opt/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/xilinx/spartan3e/spartan3e/xc3s500e/fg320/Package.xml
+Loading io standards from /opt/Xilinx/14.7/ISE_DS/PlanAhead/data/./parts/xilinx/spartan3e/IOStandards.xml
+INFO: [Device 21-19] Loading pkg sso from /opt/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/xilinx/spartan3e/spartan3e/xc3s500e/fg320/SSORules.xml
+Loading list of drcs for the architecture : /opt/Xilinx/14.7/ISE_DS/PlanAhead/data/./parts/xilinx/spartan3e/spartan3e/drc.xml
+INFO: [Timing 38-77] Reading timing library /opt/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/xilinx/spartan3e/spartan3e/spartan3e-4.lib.
+INFO: [Timing 38-34] Done reading timing library /opt/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/xilinx/spartan3e/spartan3e/spartan3e-4.lib.
+Parsing UCF File [/home/edilson/projects_VHDL/contador-servo_pwm/servo_pwm_contador_clk64kHz.ucf]
+Finished Parsing UCF File [/home/edilson/projects_VHDL/contador-servo_pwm/servo_pwm_contador_clk64kHz.ucf]
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Phase 0 | Netlist Checksum: ee7b759b
+link_design: Time (s): cpu = 00:00:16 ; elapsed = 00:00:09 . Memory (MB): peak = 2870.793 ; gain = 112.766
+set_property package_pin "" [get_ports [list  cnt_dn]]
+startgroup
+set_property package_pin B8 [get_ports clk]
+endgroup
+startgroup
+set_property package_pin B8 [get_ports clk]
+endgroup
+set_property package_pin "" [get_ports [list  cnt_dn]]
+startgroup
+set_property package_pin H18 [get_ports cnt_dn]
+endgroup
+startgroup
+set_property package_pin K18 [get_ports cnt_up]
+endgroup
+startgroup
+set_property package_pin G18 [get_ports reset]
+endgroup
+startgroup
+set_property package_pin K12 [get_ports servo]
+endgroup
+startgroup
+set_property package_pin L15 [get_ports servo]
+endgroup
+startgroup
+set_property package_pin K12 [get_ports servo]
+endgroup
+save_constraints

@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -o "/home/edilson/projects_VHDL/contador-servo_pwm/servo_pwm_contador_clk64kHz_tb_isim_beh.exe" -prj "/home/edilson/projects_VHDL/contador-servo_pwm/servo_pwm_contador_clk64kHz_tb_beh.prj" "work.servo_pwm_contador_clk64kHz_tb" 

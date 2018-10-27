@@ -1,0 +1,37 @@
+#-----------------------------------------------------------
+# PlanAhead v14.7 (64-bit)
+# Build 321239 by xbuild on Fri Sep 27 19:24:36 MDT 2013
+# Start of session at: Wed Aug 22 09:31:43 2018
+# Process ID: 3381
+# Log file: /home/edilson/projects_VHDL/contador-servo_pwm/planAhead_run_1/planAhead.log
+# Journal file: /home/edilson/projects_VHDL/contador-servo_pwm/planAhead_run_1/planAhead.jou
+#-----------------------------------------------------------
+start_gui
+source /home/edilson/projects_VHDL/contador-servo_pwm/pa.fromNetlist.tcl
+set_property package_pin "" [get_ports [list  cnt_dn]]
+startgroup
+set_property package_pin B8 [get_ports clk]
+endgroup
+startgroup
+set_property package_pin B8 [get_ports clk]
+endgroup
+set_property package_pin "" [get_ports [list  cnt_dn]]
+startgroup
+set_property package_pin H18 [get_ports cnt_dn]
+endgroup
+startgroup
+set_property package_pin K18 [get_ports cnt_up]
+endgroup
+startgroup
+set_property package_pin G18 [get_ports reset]
+endgroup
+startgroup
+set_property package_pin K12 [get_ports servo]
+endgroup
+startgroup
+set_property package_pin L15 [get_ports servo]
+endgroup
+startgroup
+set_property package_pin K12 [get_ports servo]
+endgroup
+save_constraints

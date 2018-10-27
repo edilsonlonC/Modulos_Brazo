@@ -1,0 +1,5 @@
+set -tmpdir "/home/edilson/projects_VHDL/contador-servo_pwm/xst/projnav.tmp"
+set -xsthdpdir "/home/edilson/projects_VHDL/contador-servo_pwm/xst"
+elaborate
+-ifn contador_servo_pwm.prj
+-ifmt mixed

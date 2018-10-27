@@ -1,0 +1,8 @@
+xst -intstyle ise -ifn "/home/edilson/projects_VHDL/antirebotes/Module_AR.xst" -ofn "/home/edilson/projects_VHDL/antirebotes/Module_AR.syr" 
+xst -intstyle ise -ifn "/home/edilson/projects_VHDL/antirebotes/Module_AR.xst" -ofn "/home/edilson/projects_VHDL/antirebotes/Module_AR.syr" 
+xst -intstyle ise -ifn "/home/edilson/projects_VHDL/antirebotes/Module_AR.xst" -ofn "/home/edilson/projects_VHDL/antirebotes/Module_AR.syr" 
+xst -intstyle ise -ifn "/home/edilson/projects_VHDL/antirebotes/Module_AR.xst" -ofn "/home/edilson/projects_VHDL/antirebotes/Module_AR.syr" 
+xst -intstyle ise -ifn "/home/edilson/projects_VHDL/antirebotes/Module_AR.xst" -ofn "/home/edilson/projects_VHDL/antirebotes/Module_AR.syr" 
+xst -intstyle ise -ifn "/home/edilson/projects_VHDL/antirebotes/Module_AR.xst" -ofn "/home/edilson/projects_VHDL/antirebotes/Module_AR.syr" 
+xst -intstyle ise -ifn "/home/edilson/projects_VHDL/antirebotes/Module_AR.xst" -ofn "/home/edilson/projects_VHDL/antirebotes/Module_AR.syr" 
+vhdtdtfi -prj antirebotes -o /home/edilson/projects_VHDL/antirebotes/Module_AR.vhi -module Module_AR -template /opt/Xilinx/14.7/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work Module_AR.vhd 

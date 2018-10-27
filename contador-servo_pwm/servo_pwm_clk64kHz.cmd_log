@@ -1,0 +1,2 @@
+xst -intstyle ise -ifn "/home/edilson/projects_VHDL/contador-servo_pwm/servo_pwm_clk64kHz.xst" -ofn "/home/edilson/projects_VHDL/contador-servo_pwm/servo_pwm_clk64kHz.syr" 
+xst -intstyle ise -ifn "/home/edilson/projects_VHDL/contador-servo_pwm/servo_pwm_clk64kHz.xst" -ofn "/home/edilson/projects_VHDL/contador-servo_pwm/servo_pwm_clk64kHz.syr" 

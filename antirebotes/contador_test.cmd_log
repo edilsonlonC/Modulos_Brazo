@@ -1,0 +1,1 @@
+vhdtdtfi -prj antirebotes -o /home/edilson/projects_VHDL/antirebotes/contador_test.vhi -module contador_test -template /opt/Xilinx/14.7/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work contador_test.vhd 

@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=/home/edilson/projects_VHDL/contador-servo_pwm/servo_pwm_contador_clk64kHz.ncd
+OUTFILE=/home/edilson/projects_VHDL/contador-servo_pwm/servo_pwm_contador_clk64kHz.bit
+FAMILY=Spartan3E
+PART=xc3s500e-4fg320
+WORKINGDIR=/home/edilson/projects_VHDL/contador-servo_pwm
+LICENSE=WebPack
+USER_INFO=211566900_0_0_117

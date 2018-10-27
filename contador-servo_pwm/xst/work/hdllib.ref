@@ -1,0 +1,10 @@
+EN servo_pwm_contador_clk64khz NULL /home/edilson/projects_VHDL/contador-servo_pwm/servo_pwm_clk64kHz.vhd sub00/vhpl08 1534948223
+AR servo_pwm_contador_clk64khz behavioral /home/edilson/projects_VHDL/contador-servo_pwm/servo_pwm_clk64kHz.vhd sub00/vhpl09 1534948224
+EN servo_pwm_clk64khz NULL /home/edilson/projects_VHDL/contador-servo_pwm/servo_pwm_clk64kHz.vhd sub00/vhpl04 1534603114
+EN contador_servo_pwm NULL /home/edilson/projects_VHDL/contador-servo_pwm/contador_servo_pwn.vhd sub00/vhpl06 1534948219
+EN clk64khz NULL /home/edilson/projects_VHDL/contador-servo_pwm/clk64kHz.vhd sub00/vhpl00 1534948217
+AR contador_servo_pwm behavioral /home/edilson/projects_VHDL/contador-servo_pwm/contador_servo_pwn.vhd sub00/vhpl07 1534948220
+AR clk64khz behavioral /home/edilson/projects_VHDL/contador-servo_pwm/clk64kHz.vhd sub00/vhpl01 1534948218
+AR servo_pwm behavioral /home/edilson/projects_VHDL/contador-servo_pwm/servo_pwm.vhd sub00/vhpl03 1534948222
+AR servo_pwm_clk64khz behavioral /home/edilson/projects_VHDL/contador-servo_pwm/servo_pwm_clk64kHz.vhd sub00/vhpl05 1534603115
+EN servo_pwm NULL /home/edilson/projects_VHDL/contador-servo_pwm/servo_pwm.vhd sub00/vhpl02 1534948221

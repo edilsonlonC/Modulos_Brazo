@@ -1,0 +1,467 @@
+Release 14.7 - xst P.20131013 (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> 
+Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.06 secs
+ 
+--> 
+Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.06 secs
+ 
+--> 
+Reading design: servo_pwm_clk64kHz.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "servo_pwm_clk64kHz.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "servo_pwm_clk64kHz"
+Output Format                      : NGC
+Target Device                      : xc3s500e-4-fg320
+
+---- Source Options
+Top Module Name                    : servo_pwm_clk64kHz
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 500
+Add Generic Clock Buffer(BUFG)     : 24
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "/home/edilson/projects_VHDL/contador-servo_pwm/clk64kHz.vhd" in Library work.
+Architecture behavioral of Entity clk64khz is up to date.
+Compiling vhdl file "/home/edilson/projects_VHDL/contador-servo_pwm/servo_pwm.vhd" in Library work.
+Architecture behavioral of Entity servo_pwm is up to date.
+Compiling vhdl file "/home/edilson/projects_VHDL/contador-servo_pwm/servo_pwm_clk64kHz.vhd" in Library work.
+Architecture behavioral of Entity servo_pwm_clk64khz is up to date.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <servo_pwm_clk64kHz> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <clk64kHz> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <servo_pwm> in library <work> (architecture <behavioral>).
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing Entity <servo_pwm_clk64kHz> in library <work> (Architecture <behavioral>).
+Entity <servo_pwm_clk64kHz> analyzed. Unit <servo_pwm_clk64kHz> generated.
+
+Analyzing Entity <clk64kHz> in library <work> (Architecture <behavioral>).
+Entity <clk64kHz> analyzed. Unit <clk64kHz> generated.
+
+Analyzing Entity <servo_pwm> in library <work> (Architecture <behavioral>).
+Entity <servo_pwm> analyzed. Unit <servo_pwm> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <clk64kHz>.
+    Related source file is "/home/edilson/projects_VHDL/contador-servo_pwm/clk64kHz.vhd".
+    Found 10-bit up counter for signal <contador>.
+    Found 1-bit register for signal <temporal>.
+    Summary:
+	inferred   1 Counter(s).
+	inferred   1 D-type flip-flop(s).
+Unit <clk64kHz> synthesized.
+
+
+Synthesizing Unit <servo_pwm>.
+    Related source file is "/home/edilson/projects_VHDL/contador-servo_pwm/servo_pwm.vhd".
+    Found 11-bit up counter for signal <cnt>.
+    Found 8-bit adder for signal <pwmi>.
+    Found 11-bit comparator less for signal <servo$cmp_lt0000> created at line 35.
+    Summary:
+	inferred   1 Counter(s).
+	inferred   1 Adder/Subtractor(s).
+	inferred   1 Comparator(s).
+Unit <servo_pwm> synthesized.
+
+
+Synthesizing Unit <servo_pwm_clk64kHz>.
+    Related source file is "/home/edilson/projects_VHDL/contador-servo_pwm/servo_pwm_clk64kHz.vhd".
+Unit <servo_pwm_clk64kHz> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 1
+ 8-bit adder                                           : 1
+# Counters                                             : 2
+ 10-bit up counter                                     : 1
+ 11-bit up counter                                     : 1
+# Registers                                            : 1
+ 1-bit register                                        : 1
+# Comparators                                          : 1
+ 11-bit comparator less                                : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 1
+ 8-bit adder                                           : 1
+# Counters                                             : 2
+ 10-bit up counter                                     : 1
+ 11-bit up counter                                     : 1
+# Registers                                            : 1
+ Flip-Flops                                            : 1
+# Comparators                                          : 1
+ 11-bit comparator less                                : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <servo_pwm_clk64kHz> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block servo_pwm_clk64kHz, actual ratio is 0.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 22
+ Flip-Flops                                            : 22
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : servo_pwm_clk64kHz.ngr
+Top Level Output File Name         : servo_pwm_clk64kHz
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 10
+
+Cell Usage :
+# BELS                             : 110
+#      GND                         : 1
+#      INV                         : 4
+#      LUT1                        : 19
+#      LUT2                        : 16
+#      LUT3                        : 3
+#      LUT3_D                      : 1
+#      LUT4                        : 14
+#      LUT4_D                      : 2
+#      MUXCY                       : 28
+#      VCC                         : 1
+#      XORCY                       : 21
+# FlipFlops/Latches                : 22
+#      FDC                         : 21
+#      FDCE                        : 1
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 9
+#      IBUF                        : 8
+#      OBUF                        : 1
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s500efg320-4 
+
+ Number of Slices:                       31  out of   4656     0%  
+ Number of Slice Flip Flops:             22  out of   9312     0%  
+ Number of 4 input LUTs:                 59  out of   9312     0%  
+ Number of IOs:                          10
+ Number of bonded IOBs:                  10  out of    232     4%  
+ Number of GCLKs:                         1  out of     24     4%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+--------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)    | Load  |
+-----------------------------------+--------------------------+-------+
+clk                                | BUFGP                    | 11    |
+clk64kHz_map/temporal              | NONE(servo_pwm_map/cnt_0)| 11    |
+-----------------------------------+--------------------------+-------+
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+-----------------------------------+------------------------+-------+
+Control Signal                     | Buffer(FF name)        | Load  |
+-----------------------------------+------------------------+-------+
+reset                              | IBUF                   | 22    |
+-----------------------------------+------------------------+-------+
+
+Timing Summary:
+---------------
+Speed Grade: -4
+
+   Minimum period: 5.196ns (Maximum Frequency: 192.456MHz)
+   Minimum input arrival time before clock: No path found
+   Maximum output required time after clock: 8.153ns
+   Maximum combinational path delay: 8.573ns
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 5.196ns (frequency: 192.456MHz)
+  Total number of paths / destination ports: 166 / 12
+-------------------------------------------------------------------------
+Delay:               5.196ns (Levels of Logic = 3)
+  Source:            clk64kHz_map/contador_3 (FF)
+  Destination:       clk64kHz_map/contador_8 (FF)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
+
+  Data Path: clk64kHz_map/contador_3 to clk64kHz_map/contador_8
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              2   0.591   0.622  clk64kHz_map/contador_3 (clk64kHz_map/contador_3)
+     LUT4:I0->O            1   0.704   0.455  clk64kHz_map/temporal_cmp_eq00009 (clk64kHz_map/temporal_cmp_eq00009)
+     LUT4:I2->O           11   0.704   1.108  clk64kHz_map/temporal_cmp_eq000030 (clk64kHz_map/temporal_cmp_eq0000)
+     LUT2:I0->O            1   0.704   0.000  clk64kHz_map/Mcount_contador_eqn_81 (clk64kHz_map/Mcount_contador_eqn_8)
+     FDC:D                     0.308          clk64kHz_map/contador_8
+    ----------------------------------------
+    Total                      5.196ns (3.011ns logic, 2.185ns route)
+                                       (57.9% logic, 42.1% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk64kHz_map/temporal'
+  Clock period: 5.177ns (frequency: 193.162MHz)
+  Total number of paths / destination ports: 187 / 11
+-------------------------------------------------------------------------
+Delay:               5.177ns (Levels of Logic = 12)
+  Source:            servo_pwm_map/cnt_1 (FF)
+  Destination:       servo_pwm_map/cnt_10 (FF)
+  Source Clock:      clk64kHz_map/temporal rising
+  Destination Clock: clk64kHz_map/temporal rising
+
+  Data Path: servo_pwm_map/cnt_1 to servo_pwm_map/cnt_10
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              3   0.591   0.706  servo_pwm_map/cnt_1 (servo_pwm_map/cnt_1)
+     LUT1:I0->O            1   0.704   0.000  servo_pwm_map/Mcount_cnt_cy<1>_rt (servo_pwm_map/Mcount_cnt_cy<1>_rt)
+     MUXCY:S->O            1   0.464   0.000  servo_pwm_map/Mcount_cnt_cy<1> (servo_pwm_map/Mcount_cnt_cy<1>)
+     MUXCY:CI->O           1   0.059   0.000  servo_pwm_map/Mcount_cnt_cy<2> (servo_pwm_map/Mcount_cnt_cy<2>)
+     MUXCY:CI->O           1   0.059   0.000  servo_pwm_map/Mcount_cnt_cy<3> (servo_pwm_map/Mcount_cnt_cy<3>)
+     MUXCY:CI->O           1   0.059   0.000  servo_pwm_map/Mcount_cnt_cy<4> (servo_pwm_map/Mcount_cnt_cy<4>)
+     MUXCY:CI->O           1   0.059   0.000  servo_pwm_map/Mcount_cnt_cy<5> (servo_pwm_map/Mcount_cnt_cy<5>)
+     MUXCY:CI->O           1   0.059   0.000  servo_pwm_map/Mcount_cnt_cy<6> (servo_pwm_map/Mcount_cnt_cy<6>)
+     MUXCY:CI->O           1   0.059   0.000  servo_pwm_map/Mcount_cnt_cy<7> (servo_pwm_map/Mcount_cnt_cy<7>)
+     MUXCY:CI->O           1   0.059   0.000  servo_pwm_map/Mcount_cnt_cy<8> (servo_pwm_map/Mcount_cnt_cy<8>)
+     MUXCY:CI->O           0   0.059   0.000  servo_pwm_map/Mcount_cnt_cy<9> (servo_pwm_map/Mcount_cnt_cy<9>)
+     XORCY:CI->O           1   0.804   0.424  servo_pwm_map/Mcount_cnt_xor<10> (Result<10>)
+     LUT4:I3->O            1   0.704   0.000  servo_pwm_map/Mcount_cnt_eqn_101 (servo_pwm_map/Mcount_cnt_eqn_10)
+     FDC:D                     0.308          servo_pwm_map/cnt_10
+    ----------------------------------------
+    Total                      5.177ns (4.047ns logic, 1.130ns route)
+                                       (78.2% logic, 21.8% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk64kHz_map/temporal'
+  Total number of paths / destination ports: 19 / 1
+-------------------------------------------------------------------------
+Offset:              8.153ns (Levels of Logic = 12)
+  Source:            servo_pwm_map/cnt_0 (FF)
+  Destination:       servo (PAD)
+  Source Clock:      clk64kHz_map/temporal rising
+
+  Data Path: servo_pwm_map/cnt_0 to servo
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              3   0.591   0.706  servo_pwm_map/cnt_0 (servo_pwm_map/cnt_0)
+     LUT2:I0->O            1   0.704   0.000  servo_pwm_map/Mcompar_servo_cmp_lt0000_lut<0> (servo_pwm_map/Mcompar_servo_cmp_lt0000_lut<0>)
+     MUXCY:S->O            1   0.464   0.000  servo_pwm_map/Mcompar_servo_cmp_lt0000_cy<0> (servo_pwm_map/Mcompar_servo_cmp_lt0000_cy<0>)
+     MUXCY:CI->O           1   0.059   0.000  servo_pwm_map/Mcompar_servo_cmp_lt0000_cy<1> (servo_pwm_map/Mcompar_servo_cmp_lt0000_cy<1>)
+     MUXCY:CI->O           1   0.059   0.000  servo_pwm_map/Mcompar_servo_cmp_lt0000_cy<2> (servo_pwm_map/Mcompar_servo_cmp_lt0000_cy<2>)
+     MUXCY:CI->O           1   0.059   0.000  servo_pwm_map/Mcompar_servo_cmp_lt0000_cy<3> (servo_pwm_map/Mcompar_servo_cmp_lt0000_cy<3>)
+     MUXCY:CI->O           1   0.059   0.000  servo_pwm_map/Mcompar_servo_cmp_lt0000_cy<4> (servo_pwm_map/Mcompar_servo_cmp_lt0000_cy<4>)
+     MUXCY:CI->O           1   0.059   0.000  servo_pwm_map/Mcompar_servo_cmp_lt0000_cy<5> (servo_pwm_map/Mcompar_servo_cmp_lt0000_cy<5>)
+     MUXCY:CI->O           1   0.059   0.000  servo_pwm_map/Mcompar_servo_cmp_lt0000_cy<6> (servo_pwm_map/Mcompar_servo_cmp_lt0000_cy<6>)
+     MUXCY:CI->O           1   0.059   0.000  servo_pwm_map/Mcompar_servo_cmp_lt0000_cy<7> (servo_pwm_map/Mcompar_servo_cmp_lt0000_cy<7>)
+     MUXCY:CI->O           1   0.459   0.420  servo_pwm_map/Mcompar_servo_cmp_lt0000_cy<8> (servo_pwm_map/Mcompar_servo_cmp_lt0000_cy<8>)
+     INV:I->O              1   0.704   0.420  servo_pwm_map/Mcompar_servo_cmp_lt0000_cy<8>_inv_INV_0 (servo_OBUF)
+     OBUF:I->O                 3.272          servo_OBUF (servo)
+    ----------------------------------------
+    Total                      8.153ns (6.607ns logic, 1.546ns route)
+                                       (81.0% logic, 19.0% route)
+
+=========================================================================
+Timing constraint: Default path analysis
+  Total number of paths / destination ports: 10 / 1
+-------------------------------------------------------------------------
+Delay:               8.573ns (Levels of Logic = 13)
+  Source:            pos<0> (PAD)
+  Destination:       servo (PAD)
+
+  Data Path: pos<0> to servo
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             1   1.218   0.499  pos_0_IBUF (pos_0_IBUF)
+     LUT2:I1->O            1   0.704   0.000  servo_pwm_map/Mcompar_servo_cmp_lt0000_lut<0> (servo_pwm_map/Mcompar_servo_cmp_lt0000_lut<0>)
+     MUXCY:S->O            1   0.464   0.000  servo_pwm_map/Mcompar_servo_cmp_lt0000_cy<0> (servo_pwm_map/Mcompar_servo_cmp_lt0000_cy<0>)
+     MUXCY:CI->O           1   0.059   0.000  servo_pwm_map/Mcompar_servo_cmp_lt0000_cy<1> (servo_pwm_map/Mcompar_servo_cmp_lt0000_cy<1>)
+     MUXCY:CI->O           1   0.059   0.000  servo_pwm_map/Mcompar_servo_cmp_lt0000_cy<2> (servo_pwm_map/Mcompar_servo_cmp_lt0000_cy<2>)
+     MUXCY:CI->O           1   0.059   0.000  servo_pwm_map/Mcompar_servo_cmp_lt0000_cy<3> (servo_pwm_map/Mcompar_servo_cmp_lt0000_cy<3>)
+     MUXCY:CI->O           1   0.059   0.000  servo_pwm_map/Mcompar_servo_cmp_lt0000_cy<4> (servo_pwm_map/Mcompar_servo_cmp_lt0000_cy<4>)
+     MUXCY:CI->O           1   0.059   0.000  servo_pwm_map/Mcompar_servo_cmp_lt0000_cy<5> (servo_pwm_map/Mcompar_servo_cmp_lt0000_cy<5>)
+     MUXCY:CI->O           1   0.059   0.000  servo_pwm_map/Mcompar_servo_cmp_lt0000_cy<6> (servo_pwm_map/Mcompar_servo_cmp_lt0000_cy<6>)
+     MUXCY:CI->O           1   0.059   0.000  servo_pwm_map/Mcompar_servo_cmp_lt0000_cy<7> (servo_pwm_map/Mcompar_servo_cmp_lt0000_cy<7>)
+     MUXCY:CI->O           1   0.459   0.420  servo_pwm_map/Mcompar_servo_cmp_lt0000_cy<8> (servo_pwm_map/Mcompar_servo_cmp_lt0000_cy<8>)
+     INV:I->O              1   0.704   0.420  servo_pwm_map/Mcompar_servo_cmp_lt0000_cy<8>_inv_INV_0 (servo_OBUF)
+     OBUF:I->O                 3.272          servo_OBUF (servo)
+    ----------------------------------------
+    Total                      8.573ns (7.234ns logic, 1.339ns route)
+                                       (84.4% logic, 15.6% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 5.00 secs
+Total CPU time to Xst completion: 4.70 secs
+ 
+--> 
+
+
+Total memory usage is 514780 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    0 (   0 filtered)
+Number of infos    :    1 (   0 filtered)
+

@@ -1,0 +1,31 @@
+Command line:
+   servo_pwm_contador_clk64kHz_tb_isim_par.exe
+     -simmode  gui
+     -sdfmax  /uut/=netgen/par/servo_pwm_contador_clk64kHz_timesim.sdf
+     -sdfroot  /uut
+     -simrunnum  0
+     -socket  36791
+
+Tue Aug 21 23:04:32 2018
+
+
+ Elaboration Time: 0.07 sec
+
+ Current Memory Usage: 209.33 Meg
+
+ Total Signals          : 3069
+ Total Nets             : 1797
+ Total Signal Drivers   : 1770
+ Total Blocks           : 855
+ Total Primitive Blocks : 453
+ Total Processes        : 1769
+ Total Traceable Variables  : 4229
+ Total Scalar Nets and Variables : 18982
+Total Line Count : 5599
+
+ Total Simulation Time: 688.88 sec
+
+ Current Memory Usage: 284.905 Meg
+
+Tue Aug 21 23:16:30 2018
+

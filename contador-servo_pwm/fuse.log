@@ -1,0 +1,29 @@
+Running: /opt/Xilinx/14.7/ISE_DS/ISE/bin/lin64/unwrapped/fuse -intstyle ise -incremental -o /home/edilson/projects_VHDL/contador-servo_pwm/servo_pwm_contador_clk64kHz_tb_isim_beh.exe -prj /home/edilson/projects_VHDL/contador-servo_pwm/servo_pwm_contador_clk64kHz_tb_beh.prj work.servo_pwm_contador_clk64kHz_tb 
+ISim P.20131013 (signature 0xfbc00daa)
+Number of CPUs detected in this system: 4
+Turning on mult-threading, number of parallel sub-compilation jobs: 8 
+Determining compilation order of HDL files
+Parsing VHDL file "/home/edilson/projects_VHDL/contador-servo_pwm/servo_pwm.vhd" into library work
+Parsing VHDL file "/home/edilson/projects_VHDL/contador-servo_pwm/contador_servo_pwn.vhd" into library work
+Parsing VHDL file "/home/edilson/projects_VHDL/contador-servo_pwm/clk64kHz.vhd" into library work
+Parsing VHDL file "/home/edilson/projects_VHDL/contador-servo_pwm/servo_pwm_clk64kHz.vhd" into library work
+Parsing VHDL file "/home/edilson/projects_VHDL/contador-servo_pwm/servo_pwm_contador_clk64kHz_tb.vhd" into library work
+Starting static elaboration
+Completed static elaboration
+Fuse Memory Usage: 96780 KB
+Fuse CPU Usage: 1140 ms
+Compiling package standard
+Compiling package std_logic_1164
+Compiling package numeric_std
+Compiling architecture behavioral of entity clk64kHz [clk64khz_default]
+Compiling architecture behavioral of entity contador_servo_pwm [contador_servo_pwm_default]
+Compiling architecture behavioral of entity servo_pwm [servo_pwm_default]
+Compiling architecture behavioral of entity servo_pwm_contador_clk64kHz [servo_pwm_contador_clk64khz_defa...]
+Compiling architecture behavior of entity servo_pwm_contador_clk64khz_tb
+Time Resolution for simulation is 1ps.
+Waiting for 1 sub-compilation(s) to finish...
+Compiled 12 VHDL Units
+Built simulation executable /home/edilson/projects_VHDL/contador-servo_pwm/servo_pwm_contador_clk64kHz_tb_isim_beh.exe
+Fuse Memory Usage: 668400 KB
+Fuse CPU Usage: 1230 ms
+GCC CPU Usage: 410 ms

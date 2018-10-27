@@ -1,0 +1,14 @@
+xst -intstyle ise -ifn "/home/edilson/projects_VHDL/contador-servo_pwm/servo_pwm_contador_clk64kHz.xst" -ofn "/home/edilson/projects_VHDL/contador-servo_pwm/servo_pwm_contador_clk64kHz.syr" 
+xst -intstyle ise -ifn "/home/edilson/projects_VHDL/contador-servo_pwm/servo_pwm_contador_clk64kHz.xst" -ofn "/home/edilson/projects_VHDL/contador-servo_pwm/servo_pwm_contador_clk64kHz.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s500e-fg320-4 servo_pwm_contador_clk64kHz.ngc servo_pwm_contador_clk64kHz.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o servo_pwm_contador_clk64kHz_map.ncd servo_pwm_contador_clk64kHz.ngd servo_pwm_contador_clk64kHz.pcf 
+par -w -intstyle ise -ol high -t 1 servo_pwm_contador_clk64kHz_map.ncd servo_pwm_contador_clk64kHz.ncd servo_pwm_contador_clk64kHz.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml servo_pwm_contador_clk64kHz.twx servo_pwm_contador_clk64kHz.ncd -o servo_pwm_contador_clk64kHz.twr servo_pwm_contador_clk64kHz.pcf 
+netgen -intstyle ise -s 4  -pcf servo_pwm_contador_clk64kHz.pcf -rpw 100 -tpw 0 -ar Structure -tm servo_pwm_contador_clk64kHz -insert_pp_buffers true -w -dir netgen/par -ofmt vhdl -sim servo_pwm_contador_clk64kHz.ncd servo_pwm_contador_clk64kHz_timesim.vhd 
+xst -intstyle ise -ifn "/home/edilson/projects_VHDL/contador-servo_pwm/servo_pwm_contador_clk64kHz.xst" -ofn "/home/edilson/projects_VHDL/contador-servo_pwm/servo_pwm_contador_clk64kHz.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc servo_pwm_contador_clk64kHz.ucf -p xc3s500e-fg320-4 servo_pwm_contador_clk64kHz.ngc servo_pwm_contador_clk64kHz.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o servo_pwm_contador_clk64kHz_map.ncd servo_pwm_contador_clk64kHz.ngd servo_pwm_contador_clk64kHz.pcf 
+par -w -intstyle ise -ol high -t 1 servo_pwm_contador_clk64kHz_map.ncd servo_pwm_contador_clk64kHz.ncd servo_pwm_contador_clk64kHz.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml servo_pwm_contador_clk64kHz.twx servo_pwm_contador_clk64kHz.ncd -o servo_pwm_contador_clk64kHz.twr servo_pwm_contador_clk64kHz.pcf -ucf servo_pwm_contador_clk64kHz.ucf 
+bitgen -intstyle ise -f servo_pwm_contador_clk64kHz.ut servo_pwm_contador_clk64kHz.ncd 
+bitgen -intstyle ise -f servo_pwm_contador_clk64kHz.ut servo_pwm_contador_clk64kHz.ncd 

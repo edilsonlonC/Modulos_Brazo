@@ -1,0 +1,6 @@
+[Inputs]
+button1
+clk
+[Outputs]
+=contador_test1[2:0]=
+[BiDir]
