@@ -1,0 +1,6 @@
+work	"../clk_pwm.vhd"
+work	"../counter_pwm.vhd"
+work	"../mux.vhd"
+work	"../ram.vhd"
+work	"../servoC.vhd"
+work	"../servo_pwm.vhd"

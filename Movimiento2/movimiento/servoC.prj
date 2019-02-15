@@ -1,0 +1,6 @@
+vhdl work "../servo_pwm.vhd"
+vhdl work "../ram.vhd"
+vhdl work "../mux.vhd"
+vhdl work "../counter_pwm.vhd"
+vhdl work "../clk_pwm.vhd"
+vhdl work "../servoC.vhd"

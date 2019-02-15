@@ -1,0 +1,33 @@
+ISim log file
+Running: C:\Users\utp.INFERNOCRIE\Desktop\Movimiento2\movimiento\test_isim_beh.exe -intstyle ise -gui -tclbatch isim.cmd -wdb C:/Users/utp.INFERNOCRIE/Desktop/Movimiento2/movimiento/test_isim_beh.wdb 
+ISim P.20131013 (signature 0x7708f090)
+WARNING: A WEBPACK license was found.
+WARNING: Please use Xilinx License Configuration Manager to check out a full ISim license.
+WARNING: ISim will run in Lite mode. Please refer to the ISim documentation for more information on the differences between the Lite and the Full version.
+This is a Lite version of ISim.
+Time resolution is 1 ps
+# onerror resume
+# wave add /
+# run 1000 ns
+Simulator is doing circuit initialization process.
+at 0 ps, Instance /test/uut/Inst_servo_pwm/ : Warning: NUMERIC_STD."<": metavalue detected, returning FALSE
+at 0 ps, Instance /test/uut/Inst_servo_pwm1/ : Warning: NUMERIC_STD."<": metavalue detected, returning FALSE
+at 0 ps, Instance /test/uut/Inst_servo_pwm2/ : Warning: NUMERIC_STD."<": metavalue detected, returning FALSE
+Finished circuit initialization process.
+# run 500 ms
+Stopped at time : 58745555 ns : File "C:/Users/utp.INFERNOCRIE/Desktop/Movimiento2/clk_pwm.vhd" Line 18
+ISim P.20131013 (signature 0x7708f090)
+WARNING: A WEBPACK license was found.
+WARNING: Please use Xilinx License Configuration Manager to check out a full ISim license.
+WARNING: ISim will run in Lite mode. Please refer to the ISim documentation for more information on the differences between the Lite and the Full version.
+This is a Lite version of ISim.
+# run 1000 ns
+Simulator is doing circuit initialization process.
+at 0 ps, Instance /test/uut/Inst_servo_pwm/ : Warning: NUMERIC_STD."<": metavalue detected, returning FALSE
+at 0 ps, Instance /test/uut/Inst_servo_pwm1/ : Warning: NUMERIC_STD."<": metavalue detected, returning FALSE
+at 0 ps, Instance /test/uut/Inst_servo_pwm2/ : Warning: NUMERIC_STD."<": metavalue detected, returning FALSE
+Finished circuit initialization process.
+# run 500 ms
+at 60004325 ns(4), Instance /test/uut/Inst_servo_pwm/ : Warning: NUMERIC_STD."<": metavalue detected, returning FALSE
+at 60004325 ns(4), Instance /test/uut/Inst_servo_pwm1/ : Warning: NUMERIC_STD."<": metavalue detected, returning FALSE
+at 60004325 ns(4), Instance /test/uut/Inst_servo_pwm2/ : Warning: NUMERIC_STD."<": metavalue detected, returning FALSE

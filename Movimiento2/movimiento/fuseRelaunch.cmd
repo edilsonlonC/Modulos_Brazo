@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -o "C:/Users/utp.INFERNOCRIE/Desktop/Movimiento2/movimiento/test_isim_beh.exe" -prj "C:/Users/utp.INFERNOCRIE/Desktop/Movimiento2/movimiento/test_beh.prj" "work.test" 
